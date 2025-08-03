@@ -14,3 +14,6 @@ jobs:
       - name: Run PowerShell script
         run: ./hello.ps1
         shell: pwsh
+#Just commenting this line to test the workflow
+        # This is a comment in the YAML file
+        # The script will print "Hello, World!" to the console
