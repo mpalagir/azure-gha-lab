@@ -1,1 +1,16 @@
 
+name: Hello PowerShell
+
+on: [push]
+
+jobs:
+  hello-job:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run PowerShell script
+        run: ./hello.ps1
+        shell: pwsh
