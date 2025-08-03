@@ -1,8 +1,10 @@
 
 name: Hello PowerShell
 
-on: [push]
-
+on: 
+  push:
+    branches:
+      - main
 jobs:
   hello-job:
     runs-on: windows-latest
